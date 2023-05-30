@@ -8,6 +8,7 @@ import 'package:hootelio/components/rounded_pessword_field.dart';
 import 'package:hootelio/screens/Signup/components/background.dart';
 import 'package:hootelio/screens/Signup/components/or_divider.dart';
 import 'package:hootelio/screens/Signup/components/social_icon.dart';
+import 'package:hootelio/screens/home/homepage.dart';
 import 'package:hootelio/screens/login/login_screen.dart';
 
 class Body extends StatelessWidget {
@@ -52,7 +53,11 @@ class Body extends StatelessWidget {
               onChanged: (value) {},
             ),
             RoundedButton(
-              press: () {},
+              press: () {
+                 Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                return const HomePage();
+              }));
+              },
               text: "Sign Up",
             ),
             SizedBox(height: size.height * 0.03),

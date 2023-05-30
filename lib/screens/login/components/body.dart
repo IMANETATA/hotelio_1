@@ -4,6 +4,7 @@ import 'package:hootelio/components/already_have_an_account_check.dart';
 import 'package:hootelio/components/rounded_button.dart';
 import 'package:hootelio/components/rounded_input_field.dart';
 import 'package:hootelio/components/rounded_pessword_field.dart';
+import 'package:hootelio/screens/home/homepage.dart';
 import 'package:hootelio/screens/Signup/signup_screen.dart';
 import 'package:hootelio/screens/components/background.dart';
 //import 'package:hootelio/screens/login/components/background.dart';
@@ -36,7 +37,11 @@ class Body extends StatelessWidget {
           ),
           RoundedButton(
             text: "LOGIN",
-            press: (){},
+            press: (){
+              Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                return const HomePage();
+              }));
+            },
           ),
           const SizedBox(height:30 ),
            AlreadyHaveAnAccountCheck(

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:hootelio/screens/welcome_screen.dart';
 import 'constants.dart';
 void main() async {
- 
+
   runApp(const MyApp());
 }
 //web
@@ -23,7 +23,6 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const WelcomeScreen(),
-     
     );
   }
 }
